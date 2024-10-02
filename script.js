@@ -1,40 +1,31 @@
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('nav a');
-const header = document.querySelector('header');
+// ================================ show menu ================================== //
+const showMenu = (toggleId, navId)=>{
+    const toggle = document.getElementById(toggleId);
+    const nav = document.getElementById(navId);
 
-// Function to update active state on scroll
-const scrollActive = () => {
-    const scrollDown = window.scrollY; // Current scroll position
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight; // Height of the section
-        const sectionTop = current.offsetTop - 58; // Adjusted for navbar height
-        const sectionId = current.getAttribute("id");
-        const sectionsClass = document.querySelector(`nav a[href*="${sectionId}"]`);
-
-        // Check if the scroll position is within the current section
-        if (scrollDown >= sectionTop && scrollDown < sectionTop + sectionHeight) {
-            sectionsClass.classList.add('active-link'); // Add active class
-        } else {
-            sectionsClass.classList.remove('active-link'); // Remove active class
-        }
-    });
-
-    // Change nav color on scroll
-    if (scrollDown > 50) { // Change 50 to whatever scroll threshold you want
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
+    if(nav && toggle){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle("show");
+        })
     }
-};
+}
 
-// Scroll event listener
-window.addEventListener('scroll', scrollActive);
+showMenu('nav-toggle', 'nav-menu');
 
-// Add click event listeners to update active state on click
-navLinks.forEach(link => {
-    link.addEventListener('click', function() {
-        navLinks.forEach(nav => nav.classList.remove('active-link')); // Remove active class from all links
-        this.classList.add('active-link'); // Add active class to clicked link
-        scrollActive(); // Call scrollActive to update active state
-    });
-});
+// ================================= Active class remove and add ====== //
+
+const navLink = document.querySelectorAll('.nav__link');
+
+function linkAction(){
+    navLink.forEach( n => n.classList.remove('active'));
+    this.classList.add('active');
+
+    // remove menu class after link click
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.remove('show')
+}
+
+navLink.forEach(n => n.addEventListener('click', linkAction));
+
+
+
