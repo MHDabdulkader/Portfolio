@@ -1,165 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-     <!--=============== REMIXICONS ===============-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-<body>
-    <header>
-        <a href="#" class="logo">Abdul Kader</a>
 
-        <nav class="nav__menu">
-            <a href="#home" class="active-link">Home</a>
-            <a href="#skill">Skills</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
+<body>
+
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Abdul<span style="color: red;">K</span>ader</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#" class="nav__link active">Home</a></li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"> <a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-img">
-            <img src="https://github.com/user-attachments/assets/7fadd2aa-e826-4cc5-a1f0-f7b0bbb233b5" alt="image">
-        </div>
-        <div class="home-content">
-            <h1 class="home_content_title">Hi, It's <span>Mohammad Abdul Kader</span></h1>
-            <h3 class="typing-text"> <span>Web Developer </span>   <span>Designer</span> <span>Problem Solver</span> </h3>
-            <p>Welcome to my personal portfolio, where I showcase my passion for web development and creative design. With a keen eye for detail and a deep love for clean, functional code, I craft engaging, responsive websites that balance aesthetics with usability.</p>
+    <!-- Main section -->
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi, <br> I'm <span class="home__title-color">Mohammad Abdul Kader</span> </h1>
+                <!-- <br><span style="color: coral;">FrontEnd</span> Developer, <br> Dream to become a <span style="color: steelblue">Full Stack</span> Developer -->
 
-            <div class="social-icons">
-                <img src="https://github.com/user-attachments/assets/87d51819-080e-4ff4-9672-0aba70db736b" alt="image">
-                <img src="https://github.com/user-attachments/assets/f8f71326-7db5-414d-95d6-9f4c991d7658" alt="">
-                <!-- <img src="image/codeforces.png" alt="image"> -->
+                <a href="#" class="button">Contact <i class='bx bx-chevron-right'></i></a>
             </div>
 
-            <button class="btn">Download resume</button>
-        </div>
-    </section>
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/mohammad-abdul-kader-998594263" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/MHDabdulkader" class="home__social-icon"><i class='bx bxl-github'></i></a>
 
-    <!-- Skill Section -->
-    <section class="skill" id="skill">
-        <h1 class="skill__title">Skills</h1>
-        <div class="skills-container">
-            <div class="skill-item">
-                <h3><i class="ri-html5-fill"></i></h3>
-                <h3>html</h3>
-                <p>Expertise in HTML for building structure and layout of websites.</p>
             </div>
-            <div class="skill-item">
-                <h3><i class="ri-css3-fill"></i></h3>
-                <h3>CSS</h3>
-                <p>Mastery in CSS for creating responsive and visually appealing designs.</p>
-            </div>
-            <div class="skill-item">
-                <h3><i class="ri-javascript-fill"></i></h3>
-                <h3>JavaScript</h3>
-                <p>Proficient in JavaScript for building interactive features and functionalities.</p>
-            </div>
-            <div class="skill-item">
-                <h3><i class="ri-reactjs-fill"></i></h3>
-                <h3>Reactjs</h3>
-                <p>Expert in React.js for building efficient, scalable front-end applications with reusable components and modern state management.</p>
-            </div>
-            <div class="skill-item">
-                <h3><i class="ri-nodejs-fill"></i></h3>
-                <h3>Nodejs</h3>
-                <p>Experienced in server-side programming with Node.js, developing RESTful APIs and handling asynchronous operations efficiently.</p>
-            </div>
-            <div class="skill-item">
-                <img class="programming-coding" src="https://github.com/user-attachments/assets/74b99d39-bac0-4216-afe6-ade2e9151c8b" alt="image">
-                <h3>Competitive programming</h3>
-                <p>Skilled in solving algorithmic challenges, optimizing solutions for efficiency, and participating in competitive programming platforms.</p>
-            </div>
-        </div>
-    </section>
 
-    <section class="education" id="education">
-        <h1 class="education__title">Education</h1>
-        <div class="education-container">
-            <div class="education-item">
-                <h3>SSC - 2016</h3>
-                <p>Hathazari Parboti Govt. High School</p>
+            <div class="home__image">
+                <img src="https://github.com/user-attachments/assets/e4d0de3e-6d26-43ea-823e-1572caa659b5" alt="">
             </div>
-            <div class="education-item">
-                <h3>HSC - 2019</h3>
-                <p>Chattagram Biggan College</p>
+        </section>
+
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__image">
+                    <img src="https://github.com/user-attachments/assets/b00e9588-0c49-421b-8115-5a9b550f2b1e" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subTitle">Hi, i'm Mohammad Abdul Kader</h2>
+                    <p class="about__text">I am a passionate web developer with a strong foundation in creating dynamic
+                        and responsive websites. My current focus is on front-end development, with aspirations to
+                        become a full-stack developer. I specialize in technologies like <span
+                            style="font-weight: bold; color: royalblue;">ReactJS, <span
+                                style="color: darkorange;">Tailwind CSS,</span></span> and <span
+                            style="font-weight: bold; color: gold;"> JavaScript,</span> aiming to build user-friendly,
+                        visually appealing web applications.</p>
+                    <br>
+                    <p class="about__text">Before transitioning into web development, I was actively involved in
+                        competitive programming, where I honed my problem-solving skills and developed a deep
+                        understanding of algorithms and data structures. This experience has equipped me with the
+                        ability to tackle challenges in web development efficiently.</p>
+                </div>
+
             </div>
-            <div class="education-item">
-                <h3>B.Sc in CSE (Outgoing)</h3>
-                <p>International Islamic University Chittagong (IIUC)</p>
-                <p>CGPA: 5.556</p>
-            </div>
-        </div>
-    </section>
+
+
+        </section>
+
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subTitle">Professional Skills</h2>
+                    <p class="skills__text">Strong expertise in web development technologies and programming languages.
+                    </p>
+
+                    <div class="skills__grid">
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icons'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
     
-
-    <section class="experience" id="experience">
-        <h1 class="experience__title">Experience</h1>
-        <div class="experience-container">
-            <div class="experience-item">
-                <h3>ACAD HTML/CSS JS</h3>
-                <p>A web application for educational purposes, showcasing HTML, CSS, and JavaScript skills.</p>
-                <span class="tag html">HTML</span>
-                <span class="tag css">CSS</span>
-                <span class="tag javascript">JavaScript</span>
-                <a href="https://github.com/MHDabdulkader/ACAD-html-css-js" class="btn">View Project</a>
-            </div>
-            <div class="experience-item">
-                <h3>Burger King</h3>
-                <p>A responsive web application designed for a fictional burger shop, highlighting web design and development skills.</p>
-                <span class="tag html">HTML</span>
-                <span class="tag css">CSS</span>
-                <span class="tag javascript">JavaScript</span>
-                <a href="https://github.com/MHDabdulkader/BurgerKing" class="btn">View Project</a>
-            </div>
-            <div class="experience-item">
-                <h3>Thing React Project</h3>
-                <p>A React-based project demonstrating component-based architecture and state management.</p>
-                <span class="tag react">React</span>
-                <span class="tag javascript">JavaScript</span>
-                <span class="tag express">Express</span>
-                <a href="https://github.com/MHDabdulkader/Thing-React-Project" class="btn">View Project</a>
-            </div>
-            <div class="experience-item">
-                <h3>Todo React App</h3>
-                <p>A simple and effective Todo application built with React, focusing on user interface and user experience.</p>
-                <span class="tag react">React</span>
-                <span class="tag javascript">JavaScript</span>
-                <a href="https://github.com/MHDabdulkader/Todo-React-App" class="btn">View Project</a>
-            </div>
-            <div class="experience-item">
-                <h3>Football Quiz React App</h3>
-                <p>A fun quiz application built with React, testing knowledge of football.</p>
-                <span class="tag react">React</span>
-                <span class="tag javascript">JavaScript</span>
-                <a href="https://github.com/MHDabdulkader/Football-Quiz-ReactApp" class="btn">View Project</a>
-            </div>
-        </div>
-    </section>
+                            <div>
+                                <span class="skills__percentage">90%</span>
+                            </div>
+                            <div class="skills__bar skills__html">
     
-
-    <section class="contact" id="contact">
-        <div class="contact__title">
-            <h2>Contact Me</h2>
-        </div>
-        <div class="contact-container">
-            <div class="contact-item">
-                <h3>Phone:</h3>
-                <p>01700931441</p>
-            </div>
-            <div class="contact-item">
-                <h3>Email:</h3>
-                <p><a href="mailto:abdulkader201025@gmail.com">abdulkader201025@gmail.com</a></p>
-            </div>
-        </div>
-    </section>
+                            </div>
+                        </div>
     
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-tailwind-css skills__icons'></i>
+                                <span class="skills__name">Tailwind CSS3</span>
+                            </div>
+    
+                            <div>
+                                <span class="skills__percentage">54.8%</span>
+                            </div>
+                            <div class="skills__bar skills__TailwindCss">
+    
+                            </div>
+                        </div>
+    
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icons'></i>
+                                <span class="skills__name">JavaScript</span>
+                            </div>
+    
+                            <div>
+                                <span class="skills__percentage">45.0%</span>
+                            </div>
+                            <div class="skills__bar skills__Javascript">
+    
+                            </div>
+                        </div>
+    
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-react skills__icons'></i>
+                                <span class="skills__name">ReactJS</span>
+                            </div>
+    
+                            <div>
+                                <span class="skills__percentage">30%</span>
+                            </div>
+                            <div class="skills__bar skills__React">
+    
+                            </div>
+                        </div>
+    
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-nodejs skills__icons'></i>
+                                <span class="skills__name">ExpressJs</span>
+                            </div>
+    
+                            <div>
+                                <span class="skills__percentage">30%</span>
+                            </div>
+                            <div class="skills__bar skills__Nodejs">
+    
+                            </div>
+                        </div>
+    
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-redux skills__icons'></i>
+                                <span class="skills__name">Redux</span>
+                            </div>
+    
+                            <div>
+                                <span class="skills__percentage">10%</span>
+                            </div>
+                            <div class="skills__bar skills__Redux">
+    
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+
+                <div class="skills__image">
+                    <img src="https://github.com/user-attachments/assets/95787706-3623-4472-b7b8-ba9fe163be54" alt="" >
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Works -->
+        <section class="Projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-continaer bd-grid">
+                <div class="project__list">
+                    <div class="project__card">
+                        <div class="project__title__url">
+                            <h1>Project Title: Online Learning frontend Design</h1>
+                        
+                            <a href="https://github.com/MHDabdulkader/ACAD-html-css-js">Project Link</a>
+                        </div>
+                        
+                        
+                        <div class="project__images" id="image-container">
+                            <img src="https://github.com/user-attachments/assets/882aece7-0e2c-4742-99ed-427ac2967bb2" alt="">
+                            <img src="https://github.com/user-attachments/assets/dd6bea7c-9729-4060-ba18-bdea366f769e" alt="">
+                            <img src="https://github.com/user-attachments/assets/d88fa80a-88b4-4069-b133-c6ebec6cb165" alt="">
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="project__card">
+                        <div class="project__title__url">
+                            <h1>Burger King</h1>
+                        
+                            <a href="https://github.com/MHDabdulkader/BurgerKing">Project Link</a>
+                        </div>
+                        
+                        
+                        <div class="project__images">
+                            <img src="https://github.com/user-attachments/assets/586ae74a-3a81-4eaf-9c5e-cb707e6e818c" alt="">
+                            <img src="https://github.com/user-attachments/assets/cf741b17-a34b-454c-b04b-3730a981834b" alt="">
+                            
+                            <img src="https://github.com/user-attachments/assets/c52c065f-5810-4343-b3c2-cb84b128b191" alt="">
+                            <img src="https://github.com/user-attachments/assets/b73df589-c6dd-4d99-8efe-9e51b69443f2" alt="">
+                        </div>
+
+                        
+                    </div>
+                
+
+                    <div class="project__card">
+                        <div class="project__title__url">
+                            <h1>Todo React application</h1>
+                            <a href="https://github.com/MHDabdulkader/Todo-React-App">Project Link</a>
+                        </div>
+                        
+                        
+                        <div class="project__images">
+                            <img src="https://github.com/user-attachments/assets/64bfd43c-952c-41b0-9dec-44162d779a94" alt="">
+                        </div>
+                    </div>
+
+                    <div class="project__card">
+                        <div class="project__title__url">
+                            <h1>Todo React application</h1>
+                            <a href="https://github.com/MHDabdulkader/Football-Quiz-ReactApp">Project Link</a>
+                        </div>
+                        
+                        
+                        <div class="project__images">
+                            <img src="https://github.com/user-attachments/assets/e61b854b-45b9-49b9-ba5c-e657d9a539db" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                
+
+           
+
+            
+            </div>
+        </section>
+
+
+        <section class="Contact section" id="contact">
+            <h1 class="section-title contact-title">Contact Me</h1>
+            <p class="Contact-subTitle">Build Connection</p>
+            <div class="Contact__details">
+                <div class="image">
+                    <img src="https://github.com/user-attachments/assets/704d2f96-34ca-42f6-bce4-df849b35c037" alt="">
+                </div>
+                <div class="FormContainer">
+                    <form class="Form__content" action="">
+                        <input class="input__name" type="text" placeholder="Enter Your name">
+                        <input class="input__email" type="email" placeholder="Enter email">
+                        <input class="input__phone"type="number" placeholder="Enter Phone Number">
+                        <textarea class="input__message" rows="10" cols="30" placeholder="message"></textarea>
+                        <input class="contact__btn" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+    
+            
+        </section>
+    </main>
+
+    <!-- scroll reveal cdr link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 
     <script src="script.js"></script>
 </body>
+
 </html>
