@@ -4,30 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mohammad Abdul Kader | Jr React Native App Developer</title>
+    <meta name="description"
+        content="Portfolio of Mohammad Abdul Kader - Jr React Native App Developer at SparkTech Agency. Specialized in React Native Mobile Apps, Next.js Web Platforms, and FastAPI Backend.">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
-    <!-- Boxicons CSS -->
+    <!-- Boxicons & Font Awesome -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="l-header">
+    <!-- Header Navigation -->
+    <header class="l-header" id="header">
         <nav class="nav bd-grid">
-            <div>
-                <a href="#" class="nav__logo">Abdul<span style="color: red;">K</span>ader</a>
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">Abdul<span class="logo__accent">Kader</span></a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"> <a href="#" class="nav__link active">Home</a></li>
-                    <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"> <a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"> <a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
 
@@ -37,264 +49,662 @@
         </nav>
     </header>
 
-    <!-- Main section -->
+    <!-- Main Content -->
     <main class="l-main">
-        <section class="home bd-grid" id="home">
-            <div class="home__data">
-                <h1 class="home__title">Hi, <br> I'm <span class="home__title-color">Mohammad Abdul Kader</span> </h1>
-                <!-- <br><span style="color: coral;">FrontEnd</span> Developer, <br> Dream to become a <span style="color: steelblue">Full Stack</span> Developer -->
 
-                <a href="#" class="button">Contact <i class='bx bx-chevron-right'></i></a>
-            </div>
+        <!-- Hero Section -->
+        <section class="home section" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <div class="home__badge">
+                        <span class="badge__dot" aria-hidden="true"></span>
+                        <span>Jr React Native App Developer @ SparkTech Agency</span>
+                    </div>
 
-            <div class="home__social">
-                <a href="https://www.linkedin.com/in/mohammad-abdul-kader-998594263" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/MHDabdulkader" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                    <h1 class="home__title">
+                        Hi, I'm <br>
+                        <span class="home__title-color">Mohammad Abdul Kader</span>
+                    </h1>
 
-            </div>
-
-            <div class="home__image">
-                <img src="https://github.com/user-attachments/assets/e4d0de3e-6d26-43ea-823e-1572caa659b5" alt="">
-            </div>
-        </section>
-
-        <section class="about section" id="about">
-            <h2 class="section-title">About</h2>
-            <div class="about__container bd-grid">
-                <div class="about__image">
-                    <img src="https://github.com/user-attachments/assets/b00e9588-0c49-421b-8115-5a9b550f2b1e" alt="">
-                </div>
-
-                <div>
-                    <h2 class="about__subTitle">Hi, i'm Mohammad Abdul Kader</h2>
-                    <p class="about__text">I am a passionate web developer with a strong foundation in creating dynamic
-                        and responsive websites. My current focus is on front-end development, with aspirations to
-                        become a full-stack developer. I specialize in technologies like <span
-                            style="font-weight: bold; color: royalblue;">ReactJS, <span
-                                style="color: darkorange;">Tailwind CSS,</span></span> and <span
-                            style="font-weight: bold; color: gold;"> JavaScript,</span> aiming to build user-friendly,
-                        visually appealing web applications.</p>
-                    <br>
-                    <p class="about__text">Before transitioning into web development, I was actively involved in
-                        competitive programming, where I honed my problem-solving skills and developed a deep
-                        understanding of algorithms and data structures. This experience has equipped me with the
-                        ability to tackle challenges in web development efficiently.</p>
-                </div>
-
-            </div>
-
-
-        </section>
-
-        <section class="skills section" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__container bd-grid">
-                <div>
-                    <h2 class="skills__subTitle">Professional Skills</h2>
-                    <p class="skills__text">Strong expertise in web development technologies and programming languages.
+                    <p class="home__subtitle">
+                        Building high-performance cross-platform <span class="highlight">React Native Mobile Apps</span>
+                        & scalable <span class="highlight">Next.js Web Platforms</span>. Currently expanding into
+                        <span class="highlight-alt">FastAPI Backend</span> to become a Full-Stack Architect.
                     </p>
 
-                    <div class="skills__grid">
-
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icons'></i>
-                                <span class="skills__name">HTML5</span>
-                            </div>
-    
-                            <div>
-                                <span class="skills__percentage">90%</span>
-                            </div>
-                            <div class="skills__bar skills__html">
-    
-                            </div>
-                        </div>
-    
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-tailwind-css skills__icons'></i>
-                                <span class="skills__name">Tailwind CSS3</span>
-                            </div>
-    
-                            <div>
-                                <span class="skills__percentage">54.8%</span>
-                            </div>
-                            <div class="skills__bar skills__TailwindCss">
-    
-                            </div>
-                        </div>
-    
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icons'></i>
-                                <span class="skills__name">JavaScript</span>
-                            </div>
-    
-                            <div>
-                                <span class="skills__percentage">45.0%</span>
-                            </div>
-                            <div class="skills__bar skills__Javascript">
-    
-                            </div>
-                        </div>
-    
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-react skills__icons'></i>
-                                <span class="skills__name">ReactJS</span>
-                            </div>
-    
-                            <div>
-                                <span class="skills__percentage">30%</span>
-                            </div>
-                            <div class="skills__bar skills__React">
-    
-                            </div>
-                        </div>
-    
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-nodejs skills__icons'></i>
-                                <span class="skills__name">ExpressJs</span>
-                            </div>
-    
-                            <div>
-                                <span class="skills__percentage">30%</span>
-                            </div>
-                            <div class="skills__bar skills__Nodejs">
-    
-                            </div>
-                        </div>
-    
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-redux skills__icons'></i>
-                                <span class="skills__name">Redux</span>
-                            </div>
-    
-                            <div>
-                                <span class="skills__percentage">10%</span>
-                            </div>
-                            <div class="skills__bar skills__Redux">
-    
-                            </div>
-                        </div>
-
+                    <div class="home__cta">
+                        <a href="#projects" class="button button--primary">
+                            Explore Projects <i class='bx bx-right-arrow-alt button__icon' aria-hidden="true"></i>
+                        </a>
+                        <a href="#contact" class="button button--ghost">
+                            Get In Touch <i class='bx bx-envelope button__icon' aria-hidden="true"></i>
+                        </a>
                     </div>
 
-                    
+                    <div class="home__stats">
+                        <div class="home__stat">
+                            <span class="home__stat-number">4+</span>
+                            <span class="home__stat-label">Production Apps Shipped</span>
+                        </div>
+                        <div class="home__stat">
+                            <span class="home__stat-number">2</span>
+                            <span class="home__stat-label">Core Stacks Mastered</span>
+                        </div>
+                        <div class="home__stat">
+                            <span class="home__stat-number">1</span>
+                            <span class="home__stat-label">Backend Stack in Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://github.com/MHDabdulkader" target="_blank" rel="noopener noreferrer"
+                            class="home__social-icon" aria-label="GitHub profile" title="GitHub">
+                            <i class='bx bxl-github' aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mohammad-abdul-kader-998594263" target="_blank"
+                            rel="noopener noreferrer" class="home__social-icon" aria-label="LinkedIn profile"
+                            title="LinkedIn">
+                            <i class='bx bxl-linkedin-square' aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:mhd.abdulkader.dev@gmail.com" class="home__social-icon" aria-label="Send email"
+                            title="Email Direct">
+                            <i class='bx bx-envelope' aria-hidden="true"></i>
+                        </a>
+                        <a href="tel:01700931441" class="home__social-icon" aria-label="Call phone"
+                            title="Phone Direct">
+                            <i class='bx bx-phone-call' aria-hidden="true"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="skills__image">
-                    <img src="https://github.com/user-attachments/assets/95787706-3623-4472-b7b8-ba9fe163be54" alt="" >
+                <div class="home__img-wrapper">
+                    <div class="hero-code-visual card-glass">
+                        <div class="hero-code-header">
+                            <div class="hero-code-dots">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                            </div>
+                            <span class="hero-code-filename"><i class='bx bx-code-alt'></i> app_architecture.tsx</span>
+                            <span class="hero-code-live"><span class="badge__dot"></span> Live Sync</span>
+                        </div>
+                        <div class="hero-code-body">
+                            <pre><code><span class="c-keyword">import</span> { <span class="c-func">useWebSocket</span> } <span class="c-keyword">from</span> <span class="c-str">'@reverb/client'</span>;
+<span class="c-keyword">import</span> { <span class="c-type">AppStack</span> } <span class="c-keyword">from</span> <span class="c-str">'react-native-navigation'</span>;
+
+<span class="c-keyword">export const</span> <span class="c-func">ProductionApp</span> = () =&gt; {
+  <span class="c-keyword">const</span> { status, coords, cost } = <span class="c-func">useLiveTracking</span>({
+    channel: <span class="c-str">'service.lifecycle'</span>,
+    reconnect: <span class="c-bool">true</span>
+  });
+
+  <span class="c-keyword">return</span> (
+    &lt;<span class="c-comp">LiveServiceSync</span>
+      platform=<span class="c-str">"React Native & Next.js"</span>
+      backend=<span class="c-str">"FastAPI + Reverb WS"</span>
+      status={status}
+      latency=<span class="c-str">"~18ms"</span>
+    /&gt;
+  );
+};</code></pre>
+                        </div>
+
+                        <div class="floating-card floating-card--1" aria-hidden="true">
+                            <i class='bx bxl-react icon--react'></i>
+                            <div>
+                                <h4>React Native Specialist</h4>
+                                <p>Cross-Platform Production Apps</p>
+                            </div>
+                        </div>
+
+                        <div class="floating-card floating-card--2" aria-hidden="true">
+                            <i class='bx bx-transfer-alt icon--reverb'></i>
+                            <div>
+                                <h4>WebSockets & Reverb</h4>
+                                <p>Real-Time State Sync</p>
+                            </div>
+                        </div>
+
+                        <div class="floating-card floating-card--3" aria-hidden="true">
+                            <i class='bx bxl-python icon--python'></i>
+                            <div>
+                                <h4>Next.js & FastAPI</h4>
+                                <p>Full-Stack Web & Async APIs</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My journey, passion & technical vision</span>
 
-        <!-- Works -->
-        <section class="Projects section" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-continaer bd-grid">
-                <div class="project__list">
-                    <div class="project__card">
-                        <div class="project__title__url">
-                            <h1>Project Title: Online Learning frontend Design</h1>
-                        
-                            <a href="https://github.com/MHDabdulkader/ACAD-html-css-js">Project Link</a>
-                        </div>
-                        
-                        
-                        <div class="project__images" id="image-container">
-                            <img src="https://github.com/user-attachments/assets/882aece7-0e2c-4742-99ed-427ac2967bb2" alt="">
-                            <img src="https://github.com/user-attachments/assets/dd6bea7c-9729-4060-ba18-bdea366f769e" alt="">
-                            <img src="https://github.com/user-attachments/assets/d88fa80a-88b4-4069-b133-c6ebec6cb165" alt="">
-                        </div>
-                        
-                    </div>
-                    
-                    <div class="project__card">
-                        <div class="project__title__url">
-                            <h1>Burger King</h1>
-                        
-                            <a href="https://github.com/MHDabdulkader/BurgerKing">Project Link</a>
-                        </div>
-                        
-                        
-                        <div class="project__images">
-                            <img src="https://github.com/user-attachments/assets/586ae74a-3a81-4eaf-9c5e-cb707e6e818c" alt="">
-                            <img src="https://github.com/user-attachments/assets/cf741b17-a34b-454c-b04b-3730a981834b" alt="">
-                            
-                            <img src="https://github.com/user-attachments/assets/c52c065f-5810-4343-b3c2-cb84b128b191" alt="">
-                            <img src="https://github.com/user-attachments/assets/b73df589-c6dd-4d99-8efe-9e51b69443f2" alt="">
-                        </div>
-
-                        
-                    </div>
-                
-
-                    <div class="project__card">
-                        <div class="project__title__url">
-                            <h1>Todo React application</h1>
-                            <a href="https://github.com/MHDabdulkader/Todo-React-App">Project Link</a>
-                        </div>
-                        
-                        
-                        <div class="project__images">
-                            <img src="https://github.com/user-attachments/assets/64bfd43c-952c-41b0-9dec-44162d779a94" alt="">
-                        </div>
-                    </div>
-
-                    <div class="project__card">
-                        <div class="project__title__url">
-                            <h1>Todo React application</h1>
-                            <a href="https://github.com/MHDabdulkader/Football-Quiz-ReactApp">Project Link</a>
-                        </div>
-                        
-                        
-                        <div class="project__images">
-                            <img src="https://github.com/user-attachments/assets/e61b854b-45b9-49b9-ba5c-e657d9a539db" alt="">
+            <div class="about__container bd-grid">
+                <div class="about__img-container">
+                    <div class="about__img-card">
+                        <img src="image/dp.jpg" alt="Abdul Kader About Image">
+                        <div class="about__img-tag">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                            <span>SparkTech Agency</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-                
+                <div class="about__data">
+                    <h3 class="about__heading">Driven React Native & Frontend Developer</h3>
+                    <p class="about__description">
+                        Since <strong>October 1, 2025</strong>, I have been working as a <strong>Jr React Native App
+                            Developer at SparkTech Agency</strong>. I specialize in crafting fluid cross-platform mobile
+                        apps with React Native, alongside modern web interfaces, administrative dashboards, and SaaS
+                        client projects built on <strong>Next.js</strong>.
+                    </p>
+                    <p class="about__description">
+                        Before shifting full focus to web & mobile engineering, I actively participated in
+                        <strong>Competitive Programming</strong>. Solving complex algorithmic challenges gave me strong
+                        analytical thinking, optimal data structure selection, and robust problem-solving skills.
+                    </p>
+                    <p class="about__description">
+                        To build complete end-to-end full-stack platforms, I am currently mastering
+                        <strong>FastAPI</strong> for building high-concurrency, asynchronous Python REST APIs.
+                    </p>
 
-           
+                    <div class="about__info-grid">
+                        <div class="about__info-box">
+                            <i class='bx bx-buildings about__info-icon'></i>
+                            <div>
+                                <span class="about__info-title">Current Role</span>
+                                <span class="about__info-subtitle">SparkTech Agency</span>
+                            </div>
+                        </div>
 
-            
+                        <div class="about__info-box">
+                            <i class='bx bx-calendar about__info-icon'></i>
+                            <div>
+                                <span class="about__info-title">Joined Agency</span>
+                                <span class="about__info-subtitle">Oct 1, 2025</span>
+                            </div>
+                        </div>
+
+                        <div class="about__info-box">
+                            <i class='bx bx-code-alt about__info-icon'></i>
+                            <div>
+                                <span class="about__info-title">Core Stack</span>
+                                <span class="about__info-subtitle">React Native & Next.js</span>
+                            </div>
+                        </div>
+
+                        <div class="about__info-box">
+                            <i class='bx bx-rocket about__info-icon'></i>
+                            <div>
+                                <span class="about__info-title">Learning Target</span>
+                                <span class="about__info-subtitle">FastAPI (Backend)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__contact-links">
+                        <a href="tel:01700931441" class="about__contact-pill">
+                            <i class='bx bx-phone'></i> 01700931441
+                        </a>
+                        <a href="mailto:mhd.abdulkader.dev@gmail.com" class="about__contact-pill">
+                            <i class='bx bx-envelope'></i> mhd.abdulkader.dev@gmail.com
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <!-- Experience Timeline Section -->
+        <section class="experience section" id="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <span class="section-subtitle">Professional growth & positions</span>
 
-        <section class="Contact section" id="contact">
-            <h1 class="section-title contact-title">Contact Me</h1>
-            <p class="Contact-subTitle">Build Connection</p>
-            <div class="Contact__details">
-                <div class="image">
-                    <img src="https://github.com/user-attachments/assets/704d2f96-34ca-42f6-bce4-df849b35c037" alt="">
+            <div class="experience__container bd-grid">
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class='bx bx-briefcase'></i>
+                        </div>
+                        <div class="timeline__content card-glass">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__title">Jr React Native App Developer</h3>
+                                    <span class="timeline__company">SparkTech Agency</span>
+                                </div>
+                                <span class="timeline__date"><i class='bx bx-calendar'></i> Oct 1, 2025 - Present</span>
+                            </div>
+                            <p class="timeline__text">
+                                Developing mobile and web applications for agency clients with high visual polish,
+                                smooth UX, and clean state management.
+                            </p>
+                            <ul class="timeline__bullets">
+                                <li><i class='bx bx-check-circle'></i> Architecting cross-platform mobile apps using
+                                    React Native and component-driven UI modules.</li>
+                                <li><i class='bx bx-check-circle'></i> Engineering Next.js web applications, responsive
+                                    websites, administrative dashboards, and SaaS client portals.</li>
+                                <li><i class='bx bx-check-circle'></i> Collaborating with backend and design teams to
+                                    integrate REST APIs and state synchronization.</li>
+                                <li><i class='bx bx-check-circle'></i> Optimizing mobile rendering performance,
+                                    navigation flows, and touch interactions.</li>
+                            </ul>
+                            <div class="timeline__tags">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">JavaScript (ES6+)</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class='bx bx-brain'></i>
+                        </div>
+                        <div class="timeline__content card-glass">
+                            <div class="timeline__header">
+                                <div>
+                                    <h3 class="timeline__title">Competitive Programmer & Problem Solver</h3>
+                                    <span class="timeline__company">Codeforces & Online Judges</span>
+                                </div>
+                                <span class="timeline__date"><i class='bx bx-trophy'></i> Foundation Period</span>
+                            </div>
+                            <p class="timeline__text">
+                                Solved algorithmic challenges, participating in programming contests and mastering core
+                                Computer Science concepts.
+                            </p>
+                            <ul class="timeline__bullets">
+                                <li><i class='bx bx-check-circle'></i> Implementation of advanced Data Structures
+                                    (Trees, Graphs, Hash Maps) and Algorithms.</li>
+                                <li><i class='bx bx-check-circle'></i> Optimized time and space complexity in
+                                    competitive contest environments.</li>
+                            </ul>
+                            <div class="timeline__tags">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">Data Structures</span>
+                                <span class="tech-tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="FormContainer">
-                    <form class="Form__content" action="">
-                        <input class="input__name" type="text" placeholder="Enter Your name">
-                        <input class="input__email" type="email" placeholder="Enter email">
-                        <input class="input__phone"type="number" placeholder="Enter Phone Number">
-                        <textarea class="input__message" rows="10" cols="30" placeholder="message"></textarea>
-                        <input class="contact__btn" type="submit" value="Send">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <span class="section-subtitle">My technology stack & capabilities</span>
+
+            <div class="skills__container bd-grid">
+                <div class="skills__category card-glass">
+                    <div class="skills__category-header">
+                        <i class='bx bxl-react skills__cat-icon'></i>
+                        <h3>Mobile Development</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skill__badge">
+                            <i class='bx bxl-react'></i>
+                            <span>React Native</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bx-mobile-alt'></i>
+                            <span>Cross-Platform UI</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bx-navigation'></i>
+                            <span>React Navigation</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bx-layer'></i>
+                            <span>Redux / Context API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__category card-glass">
+                    <div class="skills__category-header">
+                        <i class='bx bx-laptop skills__cat-icon'></i>
+                        <h3>Frontend Web</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skill__badge">
+                            <i class='bx bxl-tailwind-css'></i>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-react'></i>
+                            <span>React.js</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-javascript'></i>
+                            <span>JavaScript (ES6+)</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-tailwind-css'></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-html5'></i>
+                            <span>HTML5 & CSS3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__category card-glass">
+                    <div class="skills__category-header">
+                        <i class='bx bx-server skills__cat-icon'></i>
+                        <h3>Backend & Real-Time</h3>
+                    </div>
+                    <div class="skills__list">
+                        <div class="skill__badge">
+                            <i class='bx bx-transfer-alt'></i>
+                            <span>WebSockets (Reverb)</span>
+                        </div>
+                        <div class="skill__badge skill__badge--learning">
+                            <i class='bx bxl-python'></i>
+                            <span>FastAPI (Learning)</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-nodejs'></i>
+                            <span>Node.js / Express</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bx-transfer-alt'></i>
+                            <span>RESTful APIs</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-git'></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <span class="section-subtitle">Click any project to view full interactive screenshot gallery & technical breakdown</span>
+
+            <div class="projects__container bd-grid">
+
+                <!-- Project Card 1: Chunky Real-Time Tracking App -->
+                <div class="project__card card-glass" data-project="chunky" data-count="11">
+                    <div class="project__img-wrapper">
+                        <img src="image/project_chunky_1.png" alt="Chunky Real-Time Service Tracking App" class="project__img"
+                            loading="lazy">
+                        <div class="project__overlay">
+                            <button class="button button--primary open-modal-btn" data-project="chunky"
+                                aria-label="View Chunky project details">
+                                <i class='bx bx-expand-alt'></i> View Details
+                            </button>
+                        </div>
+                        <span class="project__count-badge"><i class='bx bx-images'></i> 11 Screenshots</span>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">
+                            <span class="project__type">React Native • WebSockets</span>
+                        </div>
+                        <h3 class="project__title">Chunky – Real-Time Service Tracking & Booking</h3>
+                        <p class="project__description">
+                            Real-time on-demand service tracking mobile app. Features live provider status sync (booking accepted, en-route, arrived), real-time transit tracking, and dynamic cost estimation powered by ultra-fast WebSockets (Laravel Reverb).
+                        </p>
+                        <div class="project__tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">WebSockets</span>
+                            <span class="tech-tag">Laravel Reverb</span>
+                            <span class="tech-tag">Live GPS</span>
+                            <span class="tech-tag">Dynamic Pricing</span>
+                        </div>
+                        <div class="project__card-footer">
+                            <button class="button button--sm button--ghost open-modal-btn" data-project="chunky">
+                                Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Layoverly International Platform -->
+                <div class="project__card card-glass" data-project="layoverly" data-count="9">
+                    <div class="project__img-wrapper">
+                        <img src="image/project_layoverly_1.png" alt="Layoverly International Travel Platform" class="project__img"
+                            loading="lazy">
+                        <div class="project__overlay">
+                            <button class="button button--primary open-modal-btn" data-project="layoverly"
+                                aria-label="View Layoverly project details">
+                                <i class='bx bx-expand-alt'></i> View Details
+                            </button>
+                        </div>
+                        <span class="project__count-badge"><i class='bx bx-images'></i> 9 Screenshots</span>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">
+                            <span class="project__type">React Native • Next.js</span>
+                        </div>
+                        <h3 class="project__title">Layoverly – International Layover & Flight Tracking</h3>
+                        <p class="project__description">
+                            Global transit companion connecting international passengers with verified local layover providers. Integrates live commercial flight/airplane status tracking, multi-timezone itineraries, and multi-currency booking.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Flight Tracking API</span>
+                            <span class="tech-tag">Multi-Currency</span>
+                            <span class="tech-tag">International</span>
+                        </div>
+                        <div class="project__card-footer">
+                            <button class="button button--sm button--ghost open-modal-btn" data-project="layoverly">
+                                Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Bespoke Custom Tailoring Platform -->
+                <div class="project__card card-glass" data-project="bespoke" data-count="9">
+                    <div class="project__img-wrapper">
+                        <img src="image/project_bespoke_1.png" alt="Bespoke Clothing Alteration & Custom Tailoring" class="project__img"
+                            loading="lazy">
+                        <div class="project__overlay">
+                            <button class="button button--primary open-modal-btn" data-project="bespoke"
+                                aria-label="View Bespoke project details">
+                                <i class='bx bx-expand-alt'></i> View Details
+                            </button>
+                        </div>
+                        <span class="project__count-badge"><i class='bx bx-images'></i> 9 Screenshots</span>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">
+                            <span class="project__type">React Native • Next.js</span>
+                        </div>
+                        <h3 class="project__title">Bespoke – Custom Tailoring & Alteration Booking</h3>
+                        <p class="project__description">
+                            Tailoring and garment alteration booking platform. Enables clients to schedule fitting appointments, input custom measurement profiles, track alteration milestones, and manage bespoke wardrobe orders.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Booking Flow</span>
+                            <span class="tech-tag">Measurements</span>
+                            <span class="tech-tag">Order Milestones</span>
+                        </div>
+                        <div class="project__card-footer">
+                            <button class="button button--sm button--ghost open-modal-btn" data-project="bespoke">
+                                Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: Mise Recipe Platform & Creator Studio -->
+                <div class="project__card card-glass" data-project="mise" data-count="10">
+                    <div class="project__img-wrapper">
+                        <img src="image/project_mise_1.png" alt="Mise Recipe Platform & Creator Studio" class="project__img"
+                            loading="lazy">
+                        <div class="project__overlay">
+                            <button class="button button--primary open-modal-btn" data-project="mise"
+                                aria-label="View Mise project details">
+                                <i class='bx bx-expand-alt'></i> View Details
+                            </button>
+                        </div>
+                        <span class="project__count-badge"><i class='bx bx-images'></i> 10 Screenshots</span>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">
+                            <span class="project__type">React Native • Next.js</span>
+                        </div>
+                        <h3 class="project__title">Mise – Interactive Recipe Platform & Creator Studio</h3>
+                        <p class="project__description">
+                            Culinary app featuring step-by-step guided cooking and integrated creator studio. Empowers recipe providers to publish recipes with high-res media while tracking real-time view counts, audience retention, and saves.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Creator Studio</span>
+                            <span class="tech-tag">Audience Analytics</span>
+                            <span class="tech-tag">Guided Cooking</span>
+                        </div>
+                        <div class="project__card-footer">
+                            <button class="button button--sm button--ghost open-modal-btn" data-project="mise">
+                                Quick Preview
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Let's connect and discuss projects or career opportunities</span>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__info">
+                    <div class="contact__card card-glass">
+                        <div class="contact__card-icon">
+                            <i class='bx bx-phone-call'></i>
+                        </div>
+                        <div class="contact__card-data">
+                            <h4>Phone Number</h4>
+                            <p>Direct Call / WhatsApp</p>
+                            <a href="tel:01700931441" class="contact__card-link">01700931441</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__card card-glass">
+                        <div class="contact__card-icon">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="contact__card-data">
+                            <h4>Email Address</h4>
+                            <p>Send me an inquiry</p>
+                            <a href="mailto:mhd.abdulkader.dev@gmail.com"
+                                class="contact__card-link">mhd.abdulkader.dev@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact__card card-glass">
+                        <div class="contact__card-icon">
+                            <i class='bx bx-buildings'></i>
+                        </div>
+                        <div class="contact__card-data">
+                            <h4>Current Work Agency</h4>
+                            <p>Jr React Native App Developer</p>
+                            <span class="contact__card-link">SparkTech Agency</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__card card-glass">
+                        <div class="contact__card-icon">
+                            <i class='bx bx-share-alt'></i>
+                        </div>
+                        <div class="contact__card-data">
+                            <h4>Social Profiles</h4>
+                            <div class="contact__socials">
+                                <a href="https://github.com/MHDabdulkader" target="_blank" rel="noopener noreferrer"><i
+                                        class='bx bxl-github'></i></a>
+                                <a href="https://www.linkedin.com/in/mohammad-abdul-kader-998594263" target="_blank"
+                                    rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__form-container card-glass">
+                    <form class="contact__form" id="contact-form">
+                        <h3 class="contact__form-title">Send A Message</h3>
+
+                        <div class="form__group">
+                            <label for="user-name" class="form__label">Your Name</label>
+                            <input type="text" id="user-name" class="form__input" placeholder="Enter your full name"
+                                required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="user-email" class="form__label">Your Email</label>
+                            <input type="email" id="user-email" class="form__input"
+                                placeholder="Enter your email address" required>
+                        </div>
+
+                        <div class="form__group">
+                            <label for="user-phone" class="form__label">Your Phone</label>
+                            <input type="tel" id="user-phone" class="form__input" placeholder="Enter phone number">
+                        </div>
+
+                        <div class="form__group">
+                            <label for="user-message" class="form__label">Message</label>
+                            <textarea id="user-message" class="form__input form__textarea" rows="5"
+                                placeholder="Hi Abdul Kader, I'd like to talk about..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="button button--primary button--full">
+                            Send Message <i class='bx bx-paper-plane'></i>
+                        </button>
                     </form>
                 </div>
             </div>
-    
-            
         </section>
+
     </main>
 
-    <!-- scroll reveal cdr link -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container bd-grid">
+            <div class="footer__content">
+                <a href="#home" class="footer__logo">Abdul<span class="logo__accent">Kader</span></a>
+                <p class="footer__description">Jr React Native App Developer @ SparkTech Agency</p>
+            </div>
 
+            <p class="footer__copy">&copy; 2026 Mohammad Abdul Kader. All rights reserved.</p>
+        </div>
+    </footer>
 
+    <!-- Project Details Modal Popup -->
+    <div class="modal" id="project-modal" aria-hidden="true">
+        <div class="modal__overlay" id="modal-overlay"></div>
+        <div class="modal__container card-glass">
+            <button class="modal__close" id="modal-close" aria-label="Close modal">
+                <i class='bx bx-x'></i>
+            </button>
+
+            <div class="modal__body" id="modal-body-content">
+                <!-- Dynamically Populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
 </body>
 
