@@ -1,6 +1,36 @@
 // script.js — Project data, dynamic galleries, modal controls & interactive behavior
 
 const projectsData = {
+  nutrifit: {
+    title: "NutriFit.AI – Fitness & Macro Nutrition Intelligence Platform",
+    type: "Next.js 14 • Django REST • Google Gemini AI • Stripe",
+    badge: "AI SaaS & Metabolic Intelligence",
+    description: "Fullstack AI-driven nutrition and fitness SaaS combining clinical metabolic algorithms (Mifflin-St Jeor & Harris-Benedict formulas), Google Gemini Flash RAG meal planning, Kaggle fast-food optimization (McDonald's & Starbucks), and Stripe 3 & 7-day free trial subscriptions.",
+    liveUrl: "https://ai-fitness-mu.vercel.app/",
+    githubUrl: "https://github.com/MHDabdulkader/AI_Fitness",
+    tags: [
+      "Next.js 14",
+      "Django REST Framework",
+      "Google Gemini AI",
+      "Tailwind CSS",
+      "Python",
+      "Stripe Subscriptions",
+      "RAG Architecture",
+      "Kaggle Datasets",
+      "Open Food Facts",
+      "Bun Runtime"
+    ],
+    features: [
+      "Clinical Metabolic Math: Exact BMR, TDEE, and macro split calculations using Harris-Benedict & Mifflin-St Jeor clinical equations",
+      "'Eat Out & Stay on Track' Optimizer: Macro-density scoring (Protein Efficiency Score) across 500+ curated items from McDonald's and Starbucks menus",
+      "Dual-Engine Meal Planner: Structured 1-day & 7-day meal plans via Google Gemini Flash RAG with a deterministic combinatorial fallback (99%+ caloric precision)",
+      "Curated Nutrition Datasets: Preprocessed McDonald's and Starbucks datasets alongside chunked cloud streaming extraction for Open Food Facts fitness staples",
+      "Freemium & SaaS Monetization: Frictionless unauthenticated guest tools + Stripe hosted checkout with native 3-Day & 7-Day free trials and webhook reconciliation",
+      "High-Performance Web Frontend: Modern reactive dashboard built with Next.js 14, Tailwind CSS, and Bun runtime, deployed live on Vercel"
+    ],
+    imgPrefix: "image/AI_Project",
+    imgCount: 2
+  },
   chunky: {
     title: "Chunky – Real-Time Service Tracking & Booking App",
     type: "React Native • WebSockets • Laravel Reverb",
@@ -117,6 +147,21 @@ function openProjectModal(projectId) {
   const modal = document.getElementById("project-modal");
   const body = document.getElementById("modal-body-content");
 
+  const actionsHtml = (project.liveUrl || project.githubUrl) ? `
+    <div class="modal__actions-row">
+      ${project.liveUrl ? `
+        <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer" class="button button--sm button--primary">
+          <i class='bx bx-link-external'></i> Live Demo
+        </a>
+      ` : ''}
+      ${project.githubUrl ? `
+        <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="button button--sm button--ghost">
+          <i class='bx bxl-github'></i> View Repository
+        </a>
+      ` : ''}
+    </div>
+  ` : '';
+
   body.innerHTML = `
     <div class="modal__header-info">
       <div class="modal__meta-row">
@@ -125,6 +170,7 @@ function openProjectModal(projectId) {
       </div>
       <h2 class="modal__project-title">${project.title}</h2>
       <p class="modal__project-summary">${project.description}</p>
+      ${actionsHtml}
     </div>
 
     <div class="modal__gallery-wrapper">
@@ -234,6 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Make entire project cards clickable
   document.querySelectorAll(".project__card").forEach(card => {
     card.addEventListener("click", (e) => {
+      if (e.target.closest("a") || e.target.closest("button")) return;
       const projectId = card.dataset.project;
       if (projectId) {
         openProjectModal(projectId);

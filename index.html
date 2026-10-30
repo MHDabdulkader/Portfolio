@@ -397,9 +397,17 @@
                 <div class="skills__category card-glass">
                     <div class="skills__category-header">
                         <i class='bx bx-server skills__cat-icon'></i>
-                        <h3>Backend & Real-Time</h3>
+                        <h3>Backend & AI Engineering</h3>
                     </div>
                     <div class="skills__list">
+                        <div class="skill__badge">
+                            <i class='bx bx-brain'></i>
+                            <span>Google Gemini AI (RAG)</span>
+                        </div>
+                        <div class="skill__badge">
+                            <i class='bx bxl-python'></i>
+                            <span>Python / Django REST</span>
+                        </div>
                         <div class="skill__badge">
                             <i class='bx bx-transfer-alt'></i>
                             <span>WebSockets (Reverb)</span>
@@ -432,7 +440,47 @@
 
             <div class="projects__container bd-grid">
 
-                <!-- Project Card 1: Chunky Real-Time Tracking App -->
+                <!-- Project Card 1: NutriFit.AI Fullstack AI SaaS Platform -->
+                <div class="project__card card-glass" data-project="nutrifit" data-count="2">
+                    <div class="project__img-wrapper">
+                        <img src="image/AI_Project1.png" alt="NutriFit.AI – Fitness & Macro Nutrition Platform" class="project__img"
+                            loading="lazy">
+                        <div class="project__overlay">
+                            <button class="button button--primary open-modal-btn" data-project="nutrifit"
+                                aria-label="View NutriFit.AI project details">
+                                <i class='bx bx-expand-alt'></i> View Details
+                            </button>
+                        </div>
+                        <span class="project__count-badge"><i class='bx bx-images'></i> 2 Screenshots</span>
+                    </div>
+                    <div class="project__content">
+                        <div class="project__meta">
+                            <span class="project__type">Next.js 14 • Django REST • Google Gemini AI • Stripe</span>
+                        </div>
+                        <h3 class="project__title">NutriFit.AI – Fitness & Macro Nutrition Platform</h3>
+                        <p class="project__description">
+                            Fullstack AI nutrition SaaS combining clinical metabolic math (Mifflin-St Jeor), Google Gemini Flash RAG meal planning, Kaggle restaurant dataset optimization (McDonald's & Starbucks), and Stripe 3 & 7-day free trials.
+                        </p>
+                        <div class="project__tags">
+                            <span class="tech-tag">Next.js 14</span>
+                            <span class="tech-tag">Django REST</span>
+                            <span class="tech-tag">Google Gemini AI</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                            <span class="tech-tag">Stripe Billing</span>
+                            <span class="tech-tag">RAG Meal Planner</span>
+                        </div>
+                        <div class="project__card-footer project__card-footer--dual">
+                            <button class="button button--sm button--ghost open-modal-btn" data-project="nutrifit">
+                                Quick Preview
+                            </button>
+                            <a href="https://ai-fitness-mu.vercel.app/" target="_blank" rel="noopener noreferrer" class="button button--sm button--primary project__live-btn" onclick="event.stopPropagation()">
+                                Live Demo <i class='bx bx-link-external'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Chunky Real-Time Tracking App -->
                 <div class="project__card card-glass" data-project="chunky" data-count="11">
                     <div class="project__img-wrapper">
                         <img src="image/project_chunky_1.png" alt="Chunky Real-Time Service Tracking App" class="project__img"
@@ -468,7 +516,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2: Layoverly International Platform -->
+                <!-- Project Card 3: Layoverly International Platform -->
                 <div class="project__card card-glass" data-project="layoverly" data-count="9">
                     <div class="project__img-wrapper">
                         <img src="image/project_layoverly_1.png" alt="Layoverly International Travel Platform" class="project__img"
@@ -504,7 +552,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 3: Bespoke Custom Tailoring Platform -->
+                <!-- Project Card 4: Bespoke Custom Tailoring Platform -->
                 <div class="project__card card-glass" data-project="bespoke" data-count="9">
                     <div class="project__img-wrapper">
                         <img src="image/project_bespoke_1.png" alt="Bespoke Clothing Alteration & Custom Tailoring" class="project__img"
@@ -540,7 +588,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 4: Mise Recipe Platform & Creator Studio -->
+                <!-- Project Card 5: Mise Recipe Platform & Creator Studio -->
                 <div class="project__card card-glass" data-project="mise" data-count="10">
                     <div class="project__img-wrapper">
                         <img src="image/project_mise_1.png" alt="Mise Recipe Platform & Creator Studio" class="project__img"
